@@ -1,5 +1,6 @@
 #include <iostream>
 #include "SingleLinkedListUsingClass.hpp"
+#include "DoubleLinkedListUsingStruct.hpp"
 
 /**
 * Custome structure to define a node in the linked list:
@@ -50,11 +51,19 @@ int main() {
   print(head);
   **/
 
+  /**
   SingleLinkedList *sll = new SingleLinkedList();
   sll->insert(1);
   sll->insert(2);
   sll->insert(3);
   sll->print();
+  **/
+  DoubleLinkedList *dll = new DoubleLinkedList();
+  dll->insert(1);
+  dll->insert(2);
+  dll->insert(3);
+  dll->print();
+  //1->2->3
 
   return 0;
 }
