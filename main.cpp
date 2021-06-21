@@ -1,10 +1,11 @@
 #include <iostream>
+#include "SingleLinkedListUsingClass.hpp"
 
 /**
 * Custome structure to define a node in the linked list:
 * Head -> Node 1 -> .... -> Node N -> Tail
 **/
-using namespace std;
+//using namespace std;
 struct Node {
    int data;
    Node* next;
@@ -41,9 +42,19 @@ Node* insert(int data, Node* head) {
 
 
 int main() {
+  /**
   Node* head = NULL;
   head = insert(1, head);
   head = insert(2, head);
   head = insert(3, head);
   print(head);
+  **/
+
+  SingleLinkedList *sll = new SingleLinkedList();
+  sll->insert(1);
+  sll->insert(2);
+  sll->insert(3);
+  sll->print();
+
+  return 0;
 }
